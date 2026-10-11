@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+/* Estilos para el Logo / Marca DOMIDEL */
+.brand-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: #007bff;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+.brand-subtitle {
+    font-size: 13px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #fafbfc;
+}
+
+input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 13px;
+    margin-top: 15px;
+    display: none;
+}
+
+/* Estilos para el Panel Principal */
+#dashboard {
+    display: none;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#dashboard h1 {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+#dashboard p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    width: auto;
+    padding: 10px 25px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* --- ESTILOS RESPONSIVE PARA MÓVILES --- */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+        align-items: center;
+    }
+
+    .container {
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+
+    .brand-logo {
+        font-size: 24px;
+    }
+
+    input {
+        font-size: 16px; /* Previene el zoom automático en celulares */
+        padding: 12px;
+    }
+
+    #dashboard {
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+}
